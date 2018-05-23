@@ -9,11 +9,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
+        this.title = "TUAN";
+        this.image = "http://lorempicel.com/300/300";
+        this.text = "Đỗ Anh Tuấn";
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n  <h1>Hell TEDU Online Angular 2!</h1>\n  <h4>App Main Component</h4>\n  <my-tutorial></my-tutorial>\n  ",
+            template: "\n  <h1>Hello {{title}}</h1>\n  <img [src]=\"image\"/>\n  <my-tutorial></my-tutorial>\n  <input type=\"text\" [value]=\"text\" />\n  ",
             styles: ['h4 {color:blue;}']
         })
     ], AppComponent);
