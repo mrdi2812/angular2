@@ -7,20 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_compoment_1 = require("./app.compoment");
-var tutorial_compoment_1 = require("./tutorial.compoment");
-var AppModule = /** @class */ (function () {
-    function AppModule() {
+var TutorialCompoment = /** @class */ (function () {
+    function TutorialCompoment() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_compoment_1.AppComponent, tutorial_compoment_1.TutorialCompoment],
-            bootstrap: [app_compoment_1.AppComponent]
+    TutorialCompoment = __decorate([
+        core_1.Component({
+            selector: 'my-tutorial',
+            template: '<h2>Đây là ứng dụng ANGULAR 2</h2>'
         })
-    ], AppModule);
-    return AppModule;
+    ], TutorialCompoment);
+    return TutorialCompoment;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.TutorialCompoment = TutorialCompoment;
+//# sourceMappingURL=tutorial.compoment.js.map
